@@ -6,7 +6,7 @@
 " =============================================================================
 let s:base3 = '#c5c8c6'
 let s:base2 = '#bababa'
-let s:base1 = '#a0a0a0'
+let s:base1 = '#eeeeee'
 let s:base0 = '#404040' " Changed
 let s:base00 = '#666666'
 let s:base01 = '#555555'
@@ -21,7 +21,11 @@ let s:green = '#409090'
 let s:cyan = '#8abeb7'
 let s:blue = '#8b8bcd'
 let s:magenta = '#ff8bff'
+
 let s:visbg = '#4e4e8f'
+let s:visfg = '#eeeeee'
+let s:repbg = '#6e2e2e'
+let s:repfg = '#ffffff'
 
 let s:back = '#1e1e27'
 
@@ -31,9 +35,9 @@ let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base1, s:base01 ] ]
 let s:p.inactive.right = [ [ s:base02, s:base00 ], [ s:base00, s:base02 ] ]
 let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base00, s:base03 ] ]
 let s:p.insert.left = [ [ s:base02, s:green ], [ s:base3, s:base01 ] ]
-let s:p.replace.left = [ [ s:blue, s:orange ], [ s:base3, s:base01 ] ]
-let s:p.visual.left = [ [ s:base00, s:visbg ], [ s:base3, s:base01 ] ]
-let s:p.normal.middle = [ [ s:blue, s:base1 ] ]
+let s:p.replace.left = [ [ s:repfg, s:repbg ], [ s:base3, s:base01 ] ]
+let s:p.visual.left = [ [ s:visfg, s:visbg ], [ s:base3, s:base01 ] ]
+let s:p.normal.middle = [ [ s:back, s:base1 ] ]
 let s:p.inactive.middle = [ [ s:base0, s:base02 ] ]
 let s:p.tabline.left = [ [ s:base2, s:base01 ] ]
 let s:p.tabline.tabsel = [ [ s:base2, s:base023 ] ]
