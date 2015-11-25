@@ -31,8 +31,10 @@ let s:visfg = '#404040'
 let s:repbg = '#6e2e2e'
 let s:repfg = '#ffffff'
 
-let s:filebg = '#c5c8c6'
-let s:filefg = '#555555'
+let s:middlebg = '#c5c8c6'
+let s:middlefg = '#555555'
+let s:filebg = '#555555'
+let s:filefg = '#c5c8c6'
 
 let s:back = '#1e1e27'
 
@@ -44,7 +46,7 @@ let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base00, s:base03 ] ]
 let s:p.insert.left = [ [ s:insfg, s:insbg ], [ s:base3, s:base01 ] ]
 let s:p.replace.left = [ [ s:repfg, s:repbg ], [ s:base3, s:base01 ] ]
 let s:p.visual.left = [ [ s:visfg, s:visbg ], [ s:base3, s:base01 ] ]
-let s:p.normal.middle = [ [ s:back, s:base1 ] ]
+let s:p.normal.middle = [ [ s:middlefg, s:middlebg ] ]
 let s:p.inactive.middle = [ [ s:base0, s:base02 ] ]
 let s:p.tabline.left = [ [ s:base2, s:base01 ] ]
 let s:p.tabline.tabsel = [ [ s:base2, s:base023 ] ]
