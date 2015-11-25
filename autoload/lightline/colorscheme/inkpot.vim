@@ -31,8 +31,8 @@ let s:visfg = '#404040'
 let s:repbg = '#6e2e2e'
 let s:repfg = '#ffffff'
 
-let s:filebg = '#eeeeee'
-let s:filefg = '#1e1e27'
+let s:filebg = '#c5c8c6'
+let s:filefg = '#555555'
 
 let s:back = '#1e1e27'
 
