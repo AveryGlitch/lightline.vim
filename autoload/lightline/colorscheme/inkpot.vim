@@ -24,17 +24,20 @@ let s:magenta = '#ff8bff'
 
 let s:norbg = '#409090'
 let s:norfg = '#1e1e27'
-let s:insbg = '#2e2e2e'
-let s:insfg = '#8b8bcd'
+let s:insfg = '#2e2e2e'
+let s:insbg = '#8b8bcd'
 let s:visbg = '#ff8bff' " '#4e4e8f'
 let s:visfg = '#404040'
 let s:repbg = '#6e2e2e'
 let s:repfg = '#ffffff'
 
+let s:filebg = '#eeeeee'
+let s:filefg = '#1e1e27'
+
 let s:back = '#1e1e27'
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:back, s:green ], [ s:back, s:base01 ] ]
+let s:p.normal.left = [ [ s:back, s:green ], [ s:filefg, s:filebg ] ]
 let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base1, s:base01 ] ]
 let s:p.inactive.right = [ [ s:base02, s:base00 ], [ s:base00, s:base02 ] ]
 let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base00, s:base03 ] ]
