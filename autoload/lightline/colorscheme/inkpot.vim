@@ -10,7 +10,7 @@ let s:base1 = '#a0a0a0'
 let s:base0 = '#909090'
 let s:base00 = '#666666'
 let s:base01 = '#555555'
-let s:base02 = '#434343'
+let s:base02 = '#409090' " Changed
 let s:base023 = '#303030'
 let s:base03 = '#1d1f21'
 
@@ -22,8 +22,10 @@ let s:cyan = '#8abeb7'
 let s:blue = '#8b8bcd'
 let s:magenta = '#ff8bff'
 
+let s:back = '#1e1e27'
+
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:base02, s:blue ], [ s:base3, s:base01 ] ]
+let s:p.normal.left = [ [ s:green, s:blue ], [ s:back, s:base01 ] ]
 let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base1, s:base01 ] ]
 let s:p.inactive.right = [ [ s:base02, s:base00 ], [ s:base00, s:base02 ] ]
 let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base00, s:base03 ] ]
@@ -39,4 +41,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:red, s:base023 ] ]
 let s:p.normal.warning = [ [ s:yellow, s:base02 ] ]
 
-let g:lightline#colorscheme#Tomorrow_Night#palette = lightline#colorscheme#fill(s:p)
+let g:lightline#colorscheme#inkpot#palette = lightline#colorscheme#fill(s:p)
